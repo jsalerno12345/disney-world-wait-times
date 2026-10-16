@@ -165,10 +165,10 @@ document.getElementById("now-note").textContent = `Longest posted waits at ${fmt
   document.getElementById("hour-legend").innerHTML = PARKS.map(p => `<span><span class="swatch" style="background:${COLOR[p]}"></span>${p}</span>`).join("");
   const W = widthOf("hours"), H = 300, mg = { t: 12, r: W < 600 ? 12 : 130, b: 26, l: 44 }, w = W - mg.l - mg.r, h = H - mg.t - mg.b;
   const h0 = 8, h1 = 23, rows = D.by_hour.filter(r => r.local_hour >= h0 && r.local_hour <= h1);
-  const max = niceMax(Math.max(10, ...rows.map(r => r.avg_wait)));
+  const raw = Math.max(10, ...rows.map(r => r.avg_wait)), step = raw <= 60 ? 10 : 20;
+  const max = Math.ceil(raw / step) * step;
   const x = v => mg.l + (v - h0) / (h1 - h0) * w, y = v => mg.t + h - v / max * h;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Average wait by hour for each park" });
-  const step = max <= 40 ? 10 : 20;
   for (let v = 0; v <= max; v += step) { el("line", { x1: mg.l, x2: mg.l + w, y1: y(v), y2: y(v), stroke: "var(--grid)" }, svg); el("text", { x: mg.l - 6, y: y(v) + 4, "text-anchor": "end" }, svg).textContent = v + "m"; }
   for (let v = h0; v <= h1; v += W < 600 ? 3 : 2) el("text", { x: x(v), y: H - 6, "text-anchor": "middle" }, svg).textContent = hr(v);
   const ends = [];
