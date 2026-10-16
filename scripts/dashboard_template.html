@@ -5,118 +5,140 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Disney World Wait Times</title>
 <meta name="description" content="Walt Disney World attraction wait times, collected every 30 minutes: best time to ride, busiest hours and parks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
 <style>
+  /* After-dark-at-the-parks theme: one night palette, designed dark on purpose. */
   :root {
-    color-scheme: light;
-    --page: #f4f4f2; --surface-1: #fcfcfb; --border: #e3e2de;
-    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #77766f;
-    --grid: #e9e8e4; --axis: #c9c8c2;
-    --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      color-scheme: dark;
-      --page: #111110; --surface-1: #1a1a19; --border: #2e2e2c;
-      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #94938b;
-      --grid: #2a2a28; --axis: #474743;
-      --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
-    }
-  }
-  :root[data-theme="dark"] {
     color-scheme: dark;
-    --page: #111110; --surface-1: #1a1a19; --border: #2e2e2c;
-    --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #94938b;
-    --grid: #2a2a28; --axis: #474743;
+    --night: #0f1230; --dusk: #241f5c; --panel: #1a1e46; --panel-edge: #2c3170;
+    --ink: #f3f0ff; --ink-2: #c9c6ea; --ink-3: #9d9ac8;
+    --gold: #f2c14e; --rose: #ef7fa3; --lilac: #b6a8ff;
+    --grid: #2a2e62; --axis: #4a4f8f;
     --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+    --display: "Gloock", Georgia, serif;
+    --body: "Nunito Sans", system-ui, sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--page); color: var(--text-primary);
-         font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
-  h2 { font-size: 16px; margin: 0 0 2px; }
-  a { color: inherit; }
-  .sub { color: var(--text-secondary); margin: 0 0 4px; }
-  .powered { color: var(--text-muted); font-size: 13px; margin: 0 0 24px; }
-  .note { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
-  .grid { display: grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
-  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
-          padding: 18px 20px; grid-column: span 12; min-width: 0; }
+  body { margin: 0; background: var(--night); color: var(--ink); font: 16px/1.55 var(--body); }
+  a { color: inherit; text-decoration-color: color-mix(in srgb, var(--gold) 70%, transparent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+  /* Hero: twilight sky, a few stars, three fireworks that bloom once. */
+  .sky { position: relative; overflow: hidden; padding: 72px 16px 120px;
+         background: linear-gradient(to bottom, transparent 70%, var(--night) 100%),
+                     radial-gradient(120% 90% at 50% 110%, #5b3a8c 0%, var(--dusk) 38%, var(--night) 78%); }
+  .sky svg.fx { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .sky .inner { position: relative; max-width: 1100px; margin: 0 auto; }
+  h1 { font: 400 clamp(40px, 7vw, 76px)/1.02 var(--display); margin: 0 0 14px; letter-spacing: -0.01em; max-width: 15ch; text-wrap: balance; }
+  .lede { font-size: 19px; color: var(--ink-2); margin: 0 0 6px; max-width: 46ch; }
+  .powered { color: var(--ink-3); font-size: 14px; margin: 0; }
+  .burst line { stroke-linecap: round; stroke-width: 2; }
+  .burst { transform-box: fill-box; transform-origin: center; opacity: 0; animation: bloom 1.6s ease-out forwards; }
+  .burst:nth-of-type(2) { animation-delay: .35s; } .burst:nth-of-type(3) { animation-delay: .7s; }
+  @keyframes bloom { 0% { opacity: 0; transform: scale(.2); } 35% { opacity: 1; } 100% { opacity: .55; transform: scale(1); } }
+  .star { fill: #fff; }
+  @media (prefers-reduced-motion: reduce) { .burst { animation: none; opacity: .55; } }
+
+  main { max-width: 1100px; margin: -84px auto 0; padding: 0 16px 64px; position: relative; }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); }
+  .panel { background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 18px;
+           padding: 22px 24px; grid-column: span 12; min-width: 0; }
   .half { grid-column: span 6; }
-  .kpi { grid-column: span 3; }
-  @media (max-width: 760px) { .half { grid-column: span 12; } .kpi { grid-column: span 6; } }
-  .kpi .label { color: var(--text-secondary); font-size: 13px; }
-  .kpi .value { font-size: 28px; font-weight: 650; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-  .kpi .detail { color: var(--text-muted); font-size: 12px; }
-  .banner { grid-column: span 12; background: var(--surface-1); border: 1px dashed var(--border); border-radius: 12px;
-            padding: 12px 16px; font-size: 14px; color: var(--text-secondary); }
+  h2 { font: 400 23px/1.2 var(--display); margin: 0 0 4px; }
+  .note { color: var(--ink-3); font-size: 14px; margin: 0 0 14px; max-width: 70ch; }
+
+  /* KPI tiles as attraction tickets: notched sides, a perforated stub with the label. */
+  .ticket { grid-column: span 3; min-width: 0; position: relative; color: var(--night);
+            background: #fbf3dc; border-radius: 12px; padding: 0;
+            -webkit-mask: radial-gradient(circle 10px at 0 58px, #0000 98%, #000) left / 51% 100% no-repeat,
+                          radial-gradient(circle 10px at 100% 58px, #0000 98%, #000) right / 51% 100% no-repeat;
+                    mask: radial-gradient(circle 10px at 0 58px, #0000 98%, #000) left / 51% 100% no-repeat,
+                          radial-gradient(circle 10px at 100% 58px, #0000 98%, #000) right / 51% 100% no-repeat; }
+  .ticket .stub { padding: 14px 18px 12px; height: 58px; font-weight: 700; font-size: 14px; color: #5a4a1e;
+                  border-bottom: 2px dashed #e2cf9a; display: flex; align-items: center; }
+  .ticket .value { font: 400 34px/1.05 var(--display); padding: 14px 18px 2px; font-variant-numeric: tabular-nums; }
+  .ticket .detail { font-size: 13px; color: #6b5d3a; padding: 4px 18px 16px; }
+  .banner { grid-column: span 12; border: 1px dashed var(--panel-edge); border-radius: 14px;
+            padding: 12px 16px; font-size: 15px; color: var(--ink-2); background: color-mix(in srgb, var(--panel) 60%, transparent); }
+  @media (max-width: 860px) { .ticket { grid-column: span 6; } .half { grid-column: span 12; } }
+  @media (max-width: 640px) { .burst { display: none; } .sky { padding: 48px 16px 112px; } }
+  @media (max-width: 480px) { .ticket .value { font-size: 28px; } .ticket .stub { font-size: 13px; line-height: 1.25; } .panel { padding: 18px 16px; } }
+
   svg { display: block; width: 100%; height: auto; overflow: visible; }
-  svg text { fill: var(--text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
-  svg .lbl { fill: var(--text-secondary); font-size: 12px; }
-  .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--text-secondary); margin: 4px 0 8px; }
-  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
-  .tip { position: fixed; pointer-events: none; background: var(--surface-1); color: var(--text-primary);
-         border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px;
-         box-shadow: 0 4px 16px rgba(0,0,0,.12); opacity: 0; transition: opacity .1s; z-index: 10; }
-  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; }
-  .filters button { font: inherit; font-size: 13px; padding: 4px 12px; border-radius: 999px; cursor: pointer;
-                    border: 1px solid var(--border); background: transparent; color: var(--text-secondary); }
-  .filters button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
-  details { margin-top: 10px; font-size: 13px; color: var(--text-secondary); }
+  svg text { fill: var(--ink-3); font: 11px var(--body); font-variant-numeric: tabular-nums; }
+  svg .lbl { fill: var(--ink-2); font-size: 12px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; color: var(--ink-2); margin: 2px 0 10px; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 7px; vertical-align: 0; }
+  .tip { position: fixed; pointer-events: none; background: #252a5e; color: var(--ink);
+         border: 1px solid var(--axis); border-radius: 10px; padding: 8px 11px; font-size: 13px;
+         box-shadow: 0 8px 24px rgba(0,0,0,.35); opacity: 0; transition: opacity .1s; z-index: 10; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 14px; }
+  .filters button { font: 600 14px var(--body); padding: 6px 14px; border-radius: 999px; cursor: pointer;
+                    border: 1px solid var(--panel-edge); background: transparent; color: var(--ink-2); }
+  .filters button[aria-pressed="true"] { background: var(--gold); color: var(--night); border-color: var(--gold); }
+  .filters .swatch { margin-right: 6px; }
+  details { margin-top: 12px; font-size: 14px; color: var(--ink-2); }
   summary { cursor: pointer; }
   .tablewrap { overflow-x: auto; }
-  table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
-  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
-  th { color: var(--text-secondary); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+  th { color: var(--ink-3); font-weight: 600; }
   td.num, th.num { text-align: right; }
-  footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
+  tbody tr:hover td { background: color-mix(in srgb, var(--panel-edge) 45%, transparent); }
+  footer { color: var(--ink-3); font-size: 13px; margin-top: 28px; max-width: 80ch; }
 </style>
 </head>
 <body>
+<header class="sky">
+  <svg class="fx" id="fx" aria-hidden="true"></svg>
+  <div class="inner">
+    <h1>Walt Disney World wait times</h1>
+    <p class="lede" id="sub"></p>
+    <p class="powered">Powered by <a href="https://queue-times.com/">Queue-Times.com</a>. Updated every 30 minutes.</p>
+  </div>
+</header>
 <main>
-  <h1>Walt Disney World wait times</h1>
-  <p class="sub" id="sub"></p>
-  <p class="powered">Powered by <a href="https://queue-times.com/">Queue-Times.com</a> · Updated automatically every 30 minutes</p>
-
   <div class="grid">
     <div class="banner" id="young" hidden></div>
-    <div class="card kpi"><div class="label">Longest wait right now</div><div class="value" id="k-now"></div><div class="detail" id="k-now-d"></div></div>
-    <div class="card kpi"><div class="label">Busiest park right now</div><div class="value" id="k-park"></div><div class="detail" id="k-park-d"></div></div>
-    <div class="card kpi"><div class="label">Highest average wait</div><div class="value" id="k-avg"></div><div class="detail" id="k-avg-d"></div></div>
-    <div class="card kpi"><div class="label">Snapshots collected</div><div class="value" id="k-snap"></div><div class="detail" id="k-snap-d"></div></div>
+    <div class="ticket"><div class="stub">Longest wait right now</div><div class="value" id="k-now"></div><div class="detail" id="k-now-d"></div></div>
+    <div class="ticket"><div class="stub">Busiest park right now</div><div class="value" id="k-park"></div><div class="detail" id="k-park-d"></div></div>
+    <div class="ticket"><div class="stub">Highest average wait</div><div class="value" id="k-avg"></div><div class="detail" id="k-avg-d"></div></div>
+    <div class="ticket"><div class="stub">Snapshots collected</div><div class="value" id="k-snap"></div><div class="detail" id="k-snap-d"></div></div>
 
-    <div class="card">
+    <section class="panel">
       <h2>Average wait by time of day</h2>
-      <p class="note">Mean posted wait across open attractions with a queue, by hour (park time).</p>
+      <p class="note">Mean posted wait across open attractions with a queue, by hour in park time.</p>
       <div class="legend" id="hour-legend"></div>
       <div id="hours"></div>
       <details><summary>Show table</summary><div class="tablewrap" id="hours-t"></div></details>
-    </div>
+    </section>
 
-    <div class="card half">
+    <section class="panel half">
       <h2>Right now</h2>
       <p class="note" id="now-note"></p>
       <div id="now"></div>
-    </div>
+    </section>
 
-    <div class="card half">
+    <section class="panel half">
       <h2>Longest average waits</h2>
-      <p class="note">Mean posted wait while open, all snapshots so far.</p>
+      <p class="note">Mean posted wait while open, across every snapshot so far.</p>
       <div id="avg"></div>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="panel">
       <h2>Best time to ride</h2>
-      <p class="note">Hour with the lowest average posted wait between 9am and 9pm (needs at least 3 snapshots in that hour).</p>
+      <p class="note">The hour between 9am and 9pm with the lowest average posted wait. Needs at least 3 snapshots in that hour, so it fills in over the first few days.</p>
       <div class="filters" id="filters"></div>
       <div class="tablewrap" id="rides-t"></div>
-    </div>
+    </section>
   </div>
 
   <footer>
-    Wait times are posted (not actual) waits as published by the parks and reported by <a href="https://queue-times.com/">Queue-Times.com</a>.
-    Independent hobby project; not affiliated with or endorsed by The Walt Disney Company.
-    · <a href="https://github.com/jsalerno12345/disney-world-wait-times">Code & data</a>
+    Wait times are posted waits as published by the parks and reported by <a href="https://queue-times.com/">Queue-Times.com</a>, not measured actual waits.
+    This is an independent hobby project, not affiliated with or endorsed by The Walt Disney Company.
+    <a href="https://github.com/jsalerno12345/disney-world-wait-times">See the code and data</a>.
   </footer>
 </main>
 <div class="tip" id="tip"></div>
@@ -138,24 +160,39 @@ function table(id, cols, rows) {
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const niceMax = v => Math.max(10, Math.ceil(v / 10) * 10);
 
+
+// Night sky: deterministic stars and three fireworks (original drawing, no artwork reused).
+(function () {
+  const svg = document.getElementById("fx"), W = 1200, H = 420;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 70; i++) el("circle", { class: "star", cx: rnd() * W, cy: rnd() * H * 0.8, r: rnd() < 0.85 ? 0.8 : 1.6, opacity: 0.25 + rnd() * 0.6 }, svg);
+  [[930, 110, 78, "var(--gold)"], [1080, 210, 52, "var(--rose)"], [780, 230, 44, "var(--lilac)"]].forEach(([cx, cy, r, c]) => {
+    const g = el("g", { class: "burst" }, svg);
+    for (let k = 0; k < 18; k++) { const a = k / 18 * Math.PI * 2, r0 = r * 0.28;
+      el("line", { x1: cx + Math.cos(a) * r0, y1: cy + Math.sin(a) * r0, x2: cx + Math.cos(a) * r, y2: cy + Math.sin(a) * r, stroke: c }, g);
+      el("circle", { cx: cx + Math.cos(a) * (r + 6), cy: cy + Math.sin(a) * (r + 6), r: 1.6, fill: c }, g); }
+  });
+})();
+
 // Header + KPIs
 const m = D.meta;
 const fmtDate = s => new Date(s).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 const fmtTime = s => new Date(s).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
-document.getElementById("sub").textContent = `Magic Kingdom, EPCOT, Hollywood Studios and Animal Kingdom · ${m.queued_attractions} attractions with queues · collecting since ${fmtDate(m.first_local)}`;
+document.getElementById("sub").textContent = `Every attraction with a line at Magic Kingdom, EPCOT, Hollywood Studios and Animal Kingdom: ${m.queued_attractions} in all, checked every half hour since ${fmtDate(m.first_local)}.`;
 if (m.days < 7) {
   const y = document.getElementById("young"); y.hidden = false;
   y.textContent = `Early days: ${m.days} day${m.days === 1 ? "" : "s"} of data so far. Hourly patterns and "best time to ride" get more reliable as snapshots accumulate.`;
 }
 const topNow = D.latest[0];
 document.getElementById("k-now").textContent = topNow ? mins(topNow.wait_time) : "—";
-document.getElementById("k-now-d").textContent = topNow ? `${topNow.ride_name} · ${topNow.park_name}` : "Parks closed";
+document.getElementById("k-now-d").textContent = topNow ? `${topNow.ride_name}, ${topNow.park_name}` : "Parks closed";
 const busiest = D.park_now[0];
 document.getElementById("k-park").textContent = busiest ? busiest.park_name : "—";
 document.getElementById("k-park-d").textContent = busiest ? `average ${mins(busiest.avg_wait)} across ${busiest.open_queued} open attractions` : "Parks closed";
 const r0 = D.rides[0];
 document.getElementById("k-avg").textContent = r0 ? mins(r0.avg_wait) : "—";
-document.getElementById("k-avg-d").textContent = r0 ? `${r0.ride_name} · ${r0.park_name}` : "";
+document.getElementById("k-avg-d").textContent = r0 ? `${r0.ride_name}, ${r0.park_name}` : "";
 document.getElementById("k-snap").textContent = Number(m.snapshots).toLocaleString("en-US");
 document.getElementById("k-snap-d").textContent = `last at ${fmtTime(m.last_local)} park time`;
 document.getElementById("now-note").textContent = `Longest posted waits at ${fmtTime(m.last_local)} park time.`;
@@ -222,8 +259,8 @@ hbars("avg", D.rides.slice(0, 10), "avg_wait", r => r.ride_name);
 (function () {
   const box = document.getElementById("filters"); let current = "All";
   ["All", ...PARKS].forEach(p => {
-    const b = document.createElement("button"); b.textContent = p; b.setAttribute("aria-pressed", p === current);
-    b.onclick = () => { current = p; [...box.children].forEach(c => c.setAttribute("aria-pressed", c.textContent === p)); render(); };
+    const b = document.createElement("button"); b.innerHTML = (p === "All" ? "" : `<span class="swatch" style="background:${COLOR[p]}"></span>`) + p; b.setAttribute("aria-pressed", p === current);
+    b.onclick = () => { current = p; [...box.children].forEach(c => c.setAttribute("aria-pressed", c.textContent.trim() === p)); render(); };
     box.appendChild(b);
   });
   function render() {
