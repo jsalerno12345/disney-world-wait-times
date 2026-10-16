@@ -1,0 +1,35 @@
+# On every push: the collector parses real API responses (saved fixtures),
+# and the build + dashboard work on a week of fake history. No network needed.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/raw/**", "reports/**", "index.html"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Collector parses saved API responses
+        run: python scripts/collect.py --fixtures tests/fixtures --raw-dir "$RUNNER_TEMP/raw"
+      - name: Build works on a week of fake history
+        run: |
+          python tests/make_fake_history.py "$RUNNER_TEMP/raw" --days 7
+          python scripts/build.py --raw "$RUNNER_TEMP/raw" --out "$RUNNER_TEMP/site"
+          python - <<'EOF'
+          import json, os
+          s = json.load(open(os.path.join(os.environ["RUNNER_TEMP"], "site/reports/summary.json")))
+          assert s["meta"]["days"] >= 7, s["meta"]
+          assert s["rides"] and all(r["best_hour"] is not None for r in s["rides"]), "best hour missing"
+          assert all(0 <= r["avg_wait"] <= 600 for r in s["rides"])
+          print("summary OK:", s["meta"])
+          EOF

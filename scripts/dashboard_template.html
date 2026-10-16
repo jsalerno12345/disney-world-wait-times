@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disney World Wait Times</title>
+<meta name="description" content="Walt Disney World attraction wait times, collected every 30 minutes: best time to ride, busiest hours and parks.">
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f4f4f2; --surface-1: #fcfcfb; --border: #e3e2de;
+    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #77766f;
+    --grid: #e9e8e4; --axis: #c9c8c2;
+    --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #111110; --surface-1: #1a1a19; --border: #2e2e2c;
+      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #94938b;
+      --grid: #2a2a28; --axis: #474743;
+      --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #111110; --surface-1: #1a1a19; --border: #2e2e2c;
+    --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #94938b;
+    --grid: #2a2a28; --axis: #474743;
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text-primary);
+         font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 16px; margin: 0 0 2px; }
+  a { color: inherit; }
+  .sub { color: var(--text-secondary); margin: 0 0 4px; }
+  .powered { color: var(--text-muted); font-size: 13px; margin: 0 0 24px; }
+  .note { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px;
+          padding: 18px 20px; grid-column: span 12; min-width: 0; }
+  .half { grid-column: span 6; }
+  .kpi { grid-column: span 3; }
+  @media (max-width: 760px) { .half { grid-column: span 12; } .kpi { grid-column: span 6; } }
+  .kpi .label { color: var(--text-secondary); font-size: 13px; }
+  .kpi .value { font-size: 28px; font-weight: 650; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .kpi .detail { color: var(--text-muted); font-size: 12px; }
+  .banner { grid-column: span 12; background: var(--surface-1); border: 1px dashed var(--border); border-radius: 12px;
+            padding: 12px 16px; font-size: 14px; color: var(--text-secondary); }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  svg text { fill: var(--text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  svg .lbl { fill: var(--text-secondary); font-size: 12px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--text-secondary); margin: 4px 0 8px; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .tip { position: fixed; pointer-events: none; background: var(--surface-1); color: var(--text-primary);
+         border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px;
+         box-shadow: 0 4px 16px rgba(0,0,0,.12); opacity: 0; transition: opacity .1s; z-index: 10; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; }
+  .filters button { font: inherit; font-size: 13px; padding: 4px 12px; border-radius: 999px; cursor: pointer;
+                    border: 1px solid var(--border); background: transparent; color: var(--text-secondary); }
+  .filters button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+  details { margin-top: 10px; font-size: 13px; color: var(--text-secondary); }
+  summary { cursor: pointer; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--text-secondary); font-weight: 600; }
+  td.num, th.num { text-align: right; }
+  footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Walt Disney World wait times</h1>
+  <p class="sub" id="sub"></p>
+  <p class="powered">Powered by <a href="https://queue-times.com/">Queue-Times.com</a> · Updated automatically every 30 minutes</p>
+
+  <div class="grid">
+    <div class="banner" id="young" hidden></div>
+    <div class="card kpi"><div class="label">Longest wait right now</div><div class="value" id="k-now"></div><div class="detail" id="k-now-d"></div></div>
+    <div class="card kpi"><div class="label">Busiest park right now</div><div class="value" id="k-park"></div><div class="detail" id="k-park-d"></div></div>
+    <div class="card kpi"><div class="label">Highest average wait</div><div class="value" id="k-avg"></div><div class="detail" id="k-avg-d"></div></div>
+    <div class="card kpi"><div class="label">Snapshots collected</div><div class="value" id="k-snap"></div><div class="detail" id="k-snap-d"></div></div>
+
+    <div class="card">
+      <h2>Average wait by time of day</h2>
+      <p class="note">Mean posted wait across open attractions with a queue, by hour (park time).</p>
+      <div class="legend" id="hour-legend"></div>
+      <div id="hours"></div>
+      <details><summary>Show table</summary><div class="tablewrap" id="hours-t"></div></details>
+    </div>
+
+    <div class="card half">
+      <h2>Right now</h2>
+      <p class="note" id="now-note"></p>
+      <div id="now"></div>
+    </div>
+
+    <div class="card half">
+      <h2>Longest average waits</h2>
+      <p class="note">Mean posted wait while open, all snapshots so far.</p>
+      <div id="avg"></div>
+    </div>
+
+    <div class="card">
+      <h2>Best time to ride</h2>
+      <p class="note">Hour with the lowest average posted wait between 9am and 9pm (needs at least 3 snapshots in that hour).</p>
+      <div class="filters" id="filters"></div>
+      <div class="tablewrap" id="rides-t"></div>
+    </div>
+  </div>
+
+  <footer>
+    Wait times are posted (not actual) waits as published by the parks and reported by <a href="https://queue-times.com/">Queue-Times.com</a>.
+    Independent hobby project; not affiliated with or endorsed by The Walt Disney Company.
+    · <a href="https://github.com/jsalerno12345/disney-world-wait-times">Code & data</a>
+  </footer>
+</main>
+<div class="tip" id="tip"></div>
+<script>
+const D = __DATA__;
+const PARKS = ["Magic Kingdom", "EPCOT", "Hollywood Studios", "Animal Kingdom"];
+const COLOR = { "Magic Kingdom": "var(--series-1)", "EPCOT": "var(--series-2)", "Hollywood Studios": "var(--series-3)", "Animal Kingdom": "var(--series-4)" };
+const NS = "http://www.w3.org/2000/svg", tip = document.getElementById("tip");
+const mins = v => v == null ? "—" : `${Math.round(v)} min`;
+const hr = h => h == null ? "—" : `${((h + 11) % 12) + 1}${h < 12 ? "am" : "pm"}`;
+function el(t, a = {}, p) { const e = document.createElementNS(NS, t); for (const [k, v] of Object.entries(a)) e.setAttribute(k, v); if (p) p.appendChild(e); return e; }
+function showTip(h, e) { tip.innerHTML = h; tip.style.opacity = 1; tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + "px"; tip.style.top = (e.clientY + 14) + "px"; }
+function hideTip() { tip.style.opacity = 0; }
+function widthOf(id) { return Math.max(300, Math.min(1000, document.getElementById(id).clientWidth || 1000)); }
+function table(id, cols, rows) {
+  document.getElementById(id).innerHTML = `<table><thead><tr>${cols.map(c => `<th class="${c.num ? "num" : ""}">${c.label}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map(r => "<tr>" + cols.map(c => `<td class="${c.num ? "num" : ""}">${c.fmt ? c.fmt(r[c.key], r) : (r[c.key] ?? "—")}</td>`).join("") + "</tr>").join("") + "</tbody></table>";
+}
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const niceMax = v => Math.max(10, Math.ceil(v / 10) * 10);
+
+// Header + KPIs
+const m = D.meta;
+const fmtDate = s => new Date(s).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+const fmtTime = s => new Date(s).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+document.getElementById("sub").textContent = `Magic Kingdom, EPCOT, Hollywood Studios and Animal Kingdom · ${m.queued_attractions} attractions with queues · collecting since ${fmtDate(m.first_local)}`;
+if (m.days < 7) {
+  const y = document.getElementById("young"); y.hidden = false;
+  y.textContent = `Early days: ${m.days} day${m.days === 1 ? "" : "s"} of data so far. Hourly patterns and "best time to ride" get more reliable as snapshots accumulate.`;
+}
+const topNow = D.latest[0];
+document.getElementById("k-now").textContent = topNow ? mins(topNow.wait_time) : "—";
+document.getElementById("k-now-d").textContent = topNow ? `${topNow.ride_name} · ${topNow.park_name}` : "Parks closed";
+const busiest = D.park_now[0];
+document.getElementById("k-park").textContent = busiest ? busiest.park_name : "—";
+document.getElementById("k-park-d").textContent = busiest ? `average ${mins(busiest.avg_wait)} across ${busiest.open_queued} open attractions` : "Parks closed";
+const r0 = D.rides[0];
+document.getElementById("k-avg").textContent = r0 ? mins(r0.avg_wait) : "—";
+document.getElementById("k-avg-d").textContent = r0 ? `${r0.ride_name} · ${r0.park_name}` : "";
+document.getElementById("k-snap").textContent = Number(m.snapshots).toLocaleString("en-US");
+document.getElementById("k-snap-d").textContent = `last at ${fmtTime(m.last_local)} park time`;
+document.getElementById("now-note").textContent = `Longest posted waits at ${fmtTime(m.last_local)} park time.`;
+
+// Hour lines
+(function () {
+  document.getElementById("hour-legend").innerHTML = PARKS.map(p => `<span><span class="swatch" style="background:${COLOR[p]}"></span>${p}</span>`).join("");
+  const W = widthOf("hours"), H = 300, mg = { t: 12, r: W < 600 ? 12 : 130, b: 26, l: 44 }, w = W - mg.l - mg.r, h = H - mg.t - mg.b;
+  const h0 = 8, h1 = 23, rows = D.by_hour.filter(r => r.local_hour >= h0 && r.local_hour <= h1);
+  const max = niceMax(Math.max(10, ...rows.map(r => r.avg_wait)));
+  const x = v => mg.l + (v - h0) / (h1 - h0) * w, y = v => mg.t + h - v / max * h;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Average wait by hour for each park" });
+  const step = max <= 40 ? 10 : 20;
+  for (let v = 0; v <= max; v += step) { el("line", { x1: mg.l, x2: mg.l + w, y1: y(v), y2: y(v), stroke: "var(--grid)" }, svg); el("text", { x: mg.l - 6, y: y(v) + 4, "text-anchor": "end" }, svg).textContent = v + "m"; }
+  for (let v = h0; v <= h1; v += W < 600 ? 3 : 2) el("text", { x: x(v), y: H - 6, "text-anchor": "middle" }, svg).textContent = hr(v);
+  const ends = [];
+  PARKS.forEach(p => {
+    const pts = rows.filter(r => r.park_name === p);
+    if (!pts.length) return;
+    el("path", { d: pts.map((r, i) => `${i ? "L" : "M"}${x(r.local_hour)},${y(r.avg_wait)}`).join(""), fill: "none", stroke: COLOR[p], "stroke-width": 2, "stroke-linejoin": "round" }, svg);
+    if (pts.length === 1) el("circle", { cx: x(pts[0].local_hour), cy: y(pts[0].avg_wait), r: 4, fill: COLOR[p] }, svg);
+    const last = pts[pts.length - 1]; ends.push({ p, x: x(last.local_hour), y: y(last.avg_wait) });
+  });
+  if (W >= 600) { // direct labels, nudged apart so they don't collide
+    ends.sort((a, b) => a.y - b.y); for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+    ends.forEach(e => el("text", { x: e.x + 8, y: e.y + 4, class: "lbl" }, svg).textContent = e.p);
+  }
+  const cross = el("line", { y1: mg.t, y2: mg.t + h, stroke: "var(--axis)", opacity: 0 }, svg);
+  const hit = el("rect", { x: mg.l, y: mg.t, width: w, height: h, fill: "transparent" }, svg);
+  hit.addEventListener("mousemove", e => {
+    const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY; const loc = pt.matrixTransform(svg.getScreenCTM().inverse());
+    const hh = Math.round(h0 + (loc.x - mg.l) / w * (h1 - h0)); cross.setAttribute("x1", x(hh)); cross.setAttribute("x2", x(hh)); cross.setAttribute("opacity", 1);
+    const lines = PARKS.map(p => { const r = rows.find(r => r.park_name === p && r.local_hour === hh); return `<span class="swatch" style="background:${COLOR[p]}"></span>${p}: ${r ? mins(r.avg_wait) : "—"}`; });
+    showTip(`<b>${hr(hh)}</b><br>${lines.join("<br>")}`, e);
+  });
+  hit.addEventListener("mouseleave", () => { cross.setAttribute("opacity", 0); hideTip(); });
+  document.getElementById("hours").appendChild(svg);
+  table("hours-t", [{ key: "park_name", label: "Park" }, { key: "local_hour", label: "Hour", fmt: hr }, { key: "avg_wait", label: "Avg wait", num: 1, fmt: mins }, { key: "obs", label: "Observations", num: 1 }], rows);
+})();
+
+// Horizontal bars
+function hbars(id, rows, valueKey, labelFn) {
+  if (!rows.length) { document.getElementById(id).innerHTML = `<p class="note">No open attractions in the latest snapshot.</p>`; return; }
+  const W = widthOf(id), rowH = 24, labelW = Math.min(230, W * 0.45), mg = { t: 2, r: 52, b: 2, l: labelW }, H = mg.t + mg.b + rows.length * rowH, w = W - mg.l - mg.r;
+  const max = niceMax(Math.max(...rows.map(r => r[valueKey])));
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" });
+  const chars = Math.floor(labelW / 6.6);
+  rows.forEach((r, i) => {
+    const y0 = mg.t + i * rowH + 4, bh = rowH - 9, bw = Math.max(3, r[valueKey] / max * w), rr = Math.min(4, bw / 2);
+    const name = labelFn(r);
+    el("text", { x: mg.l - 8, y: y0 + bh - 3, "text-anchor": "end", class: "lbl" }, svg).textContent = name.length > chars ? name.slice(0, chars - 1) + "…" : name;
+    el("path", { d: `M${mg.l},${y0}H${mg.l + bw - rr}q${rr},0 ${rr},${rr}V${y0 + bh - rr}q0,${rr} -${rr},${rr}H${mg.l}Z`, fill: COLOR[r.park_name] }, svg);
+    el("text", { x: mg.l + bw + 6, y: y0 + bh - 3 }, svg).textContent = mins(r[valueKey]);
+    const hit = el("rect", { x: 0, y: mg.t + i * rowH, width: W, height: rowH, fill: "transparent" }, svg);
+    hit.addEventListener("mousemove", e => showTip(`<b>${esc(r.ride_name)}</b><br>${r.park_name}${r.land_name ? " · " + esc(r.land_name) : ""}<br>${mins(r[valueKey])}`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  document.getElementById(id).appendChild(svg);
+}
+hbars("now", D.latest.slice(0, 10), "wait_time", r => r.ride_name);
+hbars("avg", D.rides.slice(0, 10), "avg_wait", r => r.ride_name);
+
+// Best-time table with park filter
+(function () {
+  const box = document.getElementById("filters"); let current = "All";
+  ["All", ...PARKS].forEach(p => {
+    const b = document.createElement("button"); b.textContent = p; b.setAttribute("aria-pressed", p === current);
+    b.onclick = () => { current = p; [...box.children].forEach(c => c.setAttribute("aria-pressed", c.textContent === p)); render(); };
+    box.appendChild(b);
+  });
+  function render() {
+    const rows = D.rides.filter(r => current === "All" || r.park_name === current);
+    table("rides-t", [
+      { key: "ride_name", label: "Attraction", fmt: v => esc(v) }, { key: "park_name", label: "Park" },
+      { key: "avg_wait", label: "Avg wait", num: 1, fmt: mins },
+      { key: "best_hour", label: "Best hour", fmt: (v, r) => v == null ? "not enough data" : `${hr(v)} (${mins(r.best_hour_wait)})` },
+      { key: "worst_hour", label: "Worst hour", fmt: (v, r) => v == null ? "—" : `${hr(v)} (${mins(r.worst_hour_wait)})` },
+      { key: "max_wait", label: "Longest seen", num: 1, fmt: mins }, { key: "obs", label: "Snapshots", num: 1 },
+    ], rows);
+  }
+  render();
+})();
+</script>
+</body>
+</html>
