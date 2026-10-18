@@ -110,3 +110,114 @@ collected_at,park_id,park_name,land_name,ride_id,ride_name,is_open,wait_time,las
 2026-10-18T04:18:40Z,8,Animal Kingdom,Pandora - The World of Avatar,4438,Na'vi River Journey,0,0,2026-10-18T04:15:57.000Z
 2026-10-18T04:18:40Z,8,Animal Kingdom,The Oasis,13812,The Oasis Exhibits,0,0,2026-10-18T04:15:57.000Z
 2026-10-18T04:18:40Z,8,Animal Kingdom,The Oasis,13808,Wilderness Explorers,0,0,2026-10-18T04:15:57.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Adventureland,1184,A Pirate's Adventure ~ Treasures of the Seven Seas,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Adventureland,134,Jungle Cruise,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Adventureland,137,Pirates of the Caribbean,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Adventureland,355,Swiss Family Treehouse,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Adventureland,141,The Magic Carpets of Aladdin,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Adventureland,334,Walt Disney's Enchanted Tiki Room,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,133,"""it's a small world""",0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,13764,Casey Jr. Splash 'N' Soak Station,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,13763,Cinderella Castle,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,132,Dumbo the Flying Elephant,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,128,Enchanted Tales with Belle,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,135,Mad Tea Party,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,147,Meet Ariel at Her Grotto,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,6700,Meet Cinderella and a Visiting Princess at Princess Fairytale Hall,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,144,Meet Daring Disney Pals as Circus Stars at Pete's Silly Sideshow,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,145,Meet Dashing Disney Pals as Circus Stars at Pete's Silly Sideshow,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,6699,Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,171,Mickey's PhilharMagic,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,136,Peter Pan's Flight,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,161,Prince Charming Regal Carrousel,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,129,Seven Dwarfs Mine Train,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,126,The Barnstormer,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,142,The Many Adventures of Winnie the Pooh,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,127,Under the Sea - Journey of The Little Mermaid,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Fantasyland,1181,Walt Disney World Railroad - Fantasyland,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Frontierland,130,Big Thunder Mountain Railroad,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Frontierland,1214,Country Bear Musical Jamboree,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Frontierland,13630,Tiana's Bayou Adventure,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Liberty Square,140,Haunted Mansion,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Liberty Square,356,The Hall of Presidents,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,"Main Street, U.S.A.",1188,Main Street Vehicles,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,"Main Street, U.S.A.",146,Meet Mickey at Town Square Theater,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,"Main Street, U.S.A.",1189,"Walt Disney World Railroad - Main Street, U.S.A.",0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,248,Astro Orbiter,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,131,Buzz Lightyear’s Space Ranger Spin,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,125,"Monsters, Inc. Laugh Floor",0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,138,Space Mountain,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,143,Tomorrowland Speedway,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,1190,Tomorrowland Transit Authority PeopleMover,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,11527,TRON Lightcycle / Run,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Tomorrowland,457,Walt Disney's Carousel of Progress,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Other,17526,Meet Festive Disney Pals at Mickey’s Not-So-Scary Halloween Party,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Other,14928,Meet Jack Skellington and Sally at Mickey's Not-So-Scary Halloween Party,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Other,14927,Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party,0,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,6,Magic Kingdom,Other,2297,Trick-or-Treat Locations at Mickey's Not-So-Scary Halloween Party,1,0,2026-10-18T09:00:42.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Celebration,2495,Disney and Pixar Short Film Festival,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Celebration,155,Journey Into Imagination With Figment,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Celebration,13627,Meet Beloved Disney Pals at Mickey & Friends,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Celebration,159,Spaceship Earth,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Discovery,10093,Guardians of the Galaxy: Cosmic Rewind,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Discovery,158,Mission: SPACE,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Discovery,160,Test Track,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Discovery,10900,Test Track Presented by Chevrolet Single Rider,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,7323,Awesome Planet,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,12387,"Journey of Water, Inspired by Moana",0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,156,Living with the Land,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,13782,SeaBase Aquarium,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,16467,Soarin' Across America,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,153,The Seas with Nemo & Friends,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Nature,152,Turtle Talk With Crush,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Showcase,829,Canada Far and Wide in Circle-Vision 360,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Showcase,2679,Frozen Ever After,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Showcase,466,Gran Fiesta Tour Starring The Three Caballeros,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Showcase,6701,Meet Anna and Elsa at Royal Sommerhus,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Showcase,8956,Remy's Ratatouille Adventure,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,World Showcase,10915,Remy's Ratatouille Adventure Single Rider,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,5,EPCOT,,17914,Living with the Land – Glimmering Greenhouses,0,0,2026-10-18T08:55:26.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Animation Courtyard,16641,Disney Jr. Mickey Mouse Clubhouse Live!,1,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Animation Courtyard,12430,Meet Ariel at Walt Disney Presents,0,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Animation Courtyard,14859,The Little Mermaid – A Musical Adventure,1,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Animation Courtyard,5145,Walt Disney Presents,0,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Commissary Lane,6704,Meet Disney Stars at Red Carpet Dreams,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Echo Lake,1174,For the First Time in Forever: A Frozen Sing-Along Celebration,1,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Echo Lake,6702,Indiana Jones™ Epic Stunt Spectacular!,1,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Echo Lake,6703,Meet Olaf at Celebrity Spotlight,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Echo Lake,120,Star Tours – The Adventures Continue,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Echo Lake,7333,Vacation Fun - An Original Animated Short with Mickey & Minnie,0,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Hollywood Boulevard,6361,Mickey & Minnie's Runaway Railway,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Pixar Plaza,12425,Meet Edna Mode at the Edna Mode Experience,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Pixar Plaza,117,Toy Story Mania!,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Star Wars: Galaxy's Edge,6368,Millennium Falcon: Smugglers Run,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Star Wars: Galaxy's Edge,10902,Millennium Falcon: Smugglers Run Single Rider,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Star Wars: Galaxy's Edge,6369,Star Wars: Rise of the Resistance,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Star Wars: Galaxy's Edge,14531,Star Wars: Rise of the Resistance Single Rider,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Sunset Boulevard,1176,Beauty and the Beast – Live on Stage,1,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Sunset Boulevard,16343,Rock 'n' Roller Coaster Starring Aerosmith Single Rider,0,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Sunset Boulevard,16342,Rock ’n’ Roller Coaster Starring The Muppets,0,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Sunset Boulevard,123,The Twilight Zone™ Tower of Terror,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Toy Story Land,5477,Alien Swirling Saucers,0,0,2026-10-18T08:55:28.000Z
+2026-10-18T09:01:05Z,7,Hollywood Studios,Toy Story Land,5476,Slinky Dog Dash,0,0,2026-10-18T09:00:45.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Africa,657,Festival of the Lion King,1,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Africa,651,Gorilla Falls Exploration Trail,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Africa,113,Kilimanjaro Safaris,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Africa,655,Wildlife Express Train,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Asia,110,Expedition Everest - Legend of the Forbidden Mountain,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Asia,14533,Expedition Everest - Legend of the Forbidden Mountain Single Rider,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Asia,10921,Feathered Friends in Flight!,1,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Asia,112,Kali River Rapids,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Conservation Station,13806,Animal Care at Conservation Station,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Conservation Station,17661,Bluey's Wild World at Conservation Station,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Conservation Station,17808,Jumping Junction,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Dinoland U.S.A,10920,Finding Nemo: The Big Blue... and Beyond!,1,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Discovery Island,13811,Discovery Island Trails,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Discovery Island,116,Meet Favorite Disney Pals at Adventurers Outpost,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Discovery Island,12451,Meet Moana at Character Landing,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Discovery Island,13751,Tree of Life,1,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Discovery Island,14943,Zootopia: Better Zoogether!,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Pandora - The World of Avatar,4439,Avatar Flight of Passage,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,Pandora - The World of Avatar,4438,Na'vi River Journey,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,The Oasis,13812,The Oasis Exhibits,0,0,2026-10-18T09:00:47.000Z
+2026-10-18T09:01:05Z,8,Animal Kingdom,The Oasis,13808,Wilderness Explorers,0,0,2026-10-18T09:00:47.000Z
