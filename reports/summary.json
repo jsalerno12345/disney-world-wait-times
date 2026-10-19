@@ -1,10 +1,10 @@
 {
  "meta": {
-  "snapshots": 19,
+  "snapshots": 20,
   "attractions_seen": 111,
   "queued_attractions": 75,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-10-19T01:12:12",
+  "last_local": "2026-10-19T07:10:46",
   "days": 4
  },
  "latest": [],
@@ -441,18 +441,6 @@
    "worst_hour_wait": 43.3
   },
   {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Peter Pan's Flight",
-   "land_name": "Fantasyland",
-   "avg_wait": 38.2,
-   "max_wait": 55,
-   "obs": 14,
-   "best_hour": 17,
-   "best_hour_wait": 38.3,
-   "worst_hour": 17,
-   "worst_hour_wait": 38.3
-  },
-  {
    "park_name": "EPCOT",
    "ride_name": "Soarin' Across America",
    "land_name": "World Nature",
@@ -463,6 +451,18 @@
    "best_hour_wait": 46.7,
    "worst_hour": 17,
    "worst_hour_wait": 46.7
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Peter Pan's Flight",
+   "land_name": "Fantasyland",
+   "avg_wait": 38.2,
+   "max_wait": 55,
+   "obs": 14,
+   "best_hour": 17,
+   "best_hour_wait": 38.3,
+   "worst_hour": 17,
+   "worst_hour_wait": 38.3
   },
   {
    "park_name": "EPCOT",
@@ -910,18 +910,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "avg_wait": 12.5,
-   "max_wait": 15,
-   "obs": 2,
-   "best_hour": null,
-   "best_hour_wait": null,
-   "worst_hour": null,
-   "worst_hour_wait": null
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Mickey's PhilharMagic",
    "land_name": "Fantasyland",
    "avg_wait": 12.5,
@@ -943,6 +931,18 @@
    "best_hour_wait": 11.7,
    "worst_hour": 17,
    "worst_hour_wait": 11.7
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party",
+   "land_name": "Other",
+   "avg_wait": 12.5,
+   "max_wait": 15,
+   "obs": 2,
+   "best_hour": null,
+   "best_hour_wait": null,
+   "worst_hour": null,
+   "worst_hour_wait": null
   },
   {
    "park_name": "Animal Kingdom",
@@ -1005,6 +1005,30 @@
    "worst_hour_wait": 15.0
   },
   {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Country Bear Musical Jamboree",
+   "land_name": "Frontierland",
+   "avg_wait": 10.0,
+   "max_wait": 10,
+   "obs": 12,
+   "best_hour": 17,
+   "best_hour_wait": 10.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 10.0
+  },
+  {
+   "park_name": "Hollywood Studios",
+   "ride_name": "Vacation Fun - An Original Animated Short with Mickey & Minnie",
+   "land_name": "Echo Lake",
+   "avg_wait": 10.0,
+   "max_wait": 10,
+   "obs": 12,
+   "best_hour": 17,
+   "best_hour_wait": 10.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 10.0
+  },
+  {
    "park_name": "EPCOT",
    "ride_name": "The Seas with Nemo & Friends",
    "land_name": "World Nature",
@@ -1018,32 +1042,8 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Country Bear Musical Jamboree",
-   "land_name": "Frontierland",
-   "avg_wait": 10.0,
-   "max_wait": 10,
-   "obs": 12,
-   "best_hour": 17,
-   "best_hour_wait": 10.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 10.0
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Walt Disney's Enchanted Tiki Room",
    "land_name": "Adventureland",
-   "avg_wait": 10.0,
-   "max_wait": 10,
-   "obs": 12,
-   "best_hour": 17,
-   "best_hour_wait": 10.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 10.0
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Vacation Fun - An Original Animated Short with Mickey & Minnie",
-   "land_name": "Echo Lake",
    "avg_wait": 10.0,
    "max_wait": 10,
    "obs": 12,
@@ -1066,18 +1066,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "\"it's a small world\"",
-   "land_name": "Fantasyland",
-   "avg_wait": 9.6,
-   "max_wait": 30,
-   "obs": 14,
-   "best_hour": 17,
-   "best_hour_wait": 15.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 15.0
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Mad Tea Party",
    "land_name": "Fantasyland",
    "avg_wait": 9.6,
@@ -1087,6 +1075,18 @@
    "best_hour_wait": 13.3,
    "worst_hour": 17,
    "worst_hour_wait": 13.3
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "\"it's a small world\"",
+   "land_name": "Fantasyland",
+   "avg_wait": 9.6,
+   "max_wait": 30,
+   "obs": 14,
+   "best_hour": 17,
+   "best_hour_wait": 15.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 15.0
   },
   {
    "park_name": "Hollywood Studios",
