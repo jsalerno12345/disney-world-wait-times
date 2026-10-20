@@ -1,15 +1,53 @@
 {
  "meta": {
-  "snapshots": 24,
+  "snapshots": 25,
   "attractions_seen": 111,
   "queued_attractions": 75,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-10-20T02:30:42",
+  "last_local": "2026-10-20T08:01:14",
   "days": 5
  },
- "latest": [],
- "park_now": [],
+ "latest": [
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Avatar Flight of Passage",
+   "land_name": "Pandora - The World of Avatar",
+   "wait_time": 55
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Zootopia: Better Zoogether!",
+   "land_name": "Discovery Island",
+   "wait_time": 15
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Na'vi River Journey",
+   "land_name": "Pandora - The World of Avatar",
+   "wait_time": 10
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Expedition Everest - Legend of the Forbidden Mountain",
+   "land_name": "Asia",
+   "wait_time": 5
+  }
+ ],
+ "park_now": [
+  {
+   "park_name": "Animal Kingdom",
+   "avg_wait": 21.3,
+   "max_wait": 55,
+   "open_queued": 4
+  }
+ ],
  "by_hour": [
+  {
+   "park_name": "Animal Kingdom",
+   "local_hour": 8,
+   "avg_wait": 21.3,
+   "obs": 4
+  },
   {
    "park_name": "Animal Kingdom",
    "local_hour": 9,
@@ -261,6 +299,13 @@
   },
   {
    "park_name": "Animal Kingdom",
+   "weekday_num": 2,
+   "local_weekday": "Tuesday",
+   "avg_wait": 21.3,
+   "days": 1
+  },
+  {
+   "park_name": "Animal Kingdom",
    "weekday_num": 5,
    "local_weekday": "Friday",
    "avg_wait": 29.3,
@@ -478,9 +523,9 @@
    "park_name": "Animal Kingdom",
    "ride_name": "Avatar Flight of Passage",
    "land_name": "Pandora - The World of Avatar",
-   "avg_wait": 46.2,
+   "avg_wait": 46.8,
    "max_wait": 65,
-   "obs": 13,
+   "obs": 14,
    "best_hour": 17,
    "best_hour_wait": 41.7,
    "worst_hour": 17,
@@ -499,18 +544,6 @@
    "worst_hour_wait": 55.0
   },
   {
-   "park_name": "Animal Kingdom",
-   "ride_name": "Na'vi River Journey",
-   "land_name": "Pandora - The World of Avatar",
-   "avg_wait": 41.5,
-   "max_wait": 65,
-   "obs": 13,
-   "best_hour": 17,
-   "best_hour_wait": 50.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 50.0
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Peter Pan's Flight",
    "land_name": "Fantasyland",
@@ -521,6 +554,18 @@
    "best_hour_wait": 38.3,
    "worst_hour": 17,
    "worst_hour_wait": 38.3
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Na'vi River Journey",
+   "land_name": "Pandora - The World of Avatar",
+   "avg_wait": 39.3,
+   "max_wait": 65,
+   "obs": 14,
+   "best_hour": 17,
+   "best_hour_wait": 50.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 50.0
   },
   {
    "park_name": "Hollywood Studios",
@@ -583,18 +628,6 @@
    "worst_hour_wait": 40.0
   },
   {
-   "park_name": "Animal Kingdom",
-   "ride_name": "Meet Favorite Disney Pals at Adventurers Outpost",
-   "land_name": "Discovery Island",
-   "avg_wait": 32.5,
-   "max_wait": 65,
-   "obs": 12,
-   "best_hour": 17,
-   "best_hour_wait": 48.3,
-   "worst_hour": 17,
-   "worst_hour_wait": 48.3
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Meet Jack Skellington and Sally at Mickey's Not-So-Scary Halloween Party",
    "land_name": "Other",
@@ -605,6 +638,18 @@
    "best_hour_wait": null,
    "worst_hour": null,
    "worst_hour_wait": null
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Meet Favorite Disney Pals at Adventurers Outpost",
+   "land_name": "Discovery Island",
+   "avg_wait": 32.5,
+   "max_wait": 65,
+   "obs": 12,
+   "best_hour": 17,
+   "best_hour_wait": 48.3,
+   "worst_hour": 17,
+   "worst_hour_wait": 48.3
   },
   {
    "park_name": "Animal Kingdom",
@@ -655,18 +700,6 @@
    "worst_hour_wait": 31.7
   },
   {
-   "park_name": "Animal Kingdom",
-   "ride_name": "Expedition Everest - Legend of the Forbidden Mountain",
-   "land_name": "Asia",
-   "avg_wait": 28.6,
-   "max_wait": 55,
-   "obs": 11,
-   "best_hour": null,
-   "best_hour_wait": null,
-   "worst_hour": null,
-   "worst_hour_wait": null
-  },
-  {
    "park_name": "Hollywood Studios",
    "ride_name": "Meet Disney Stars at Red Carpet Dreams",
    "land_name": "Commissary Lane",
@@ -713,6 +746,18 @@
    "best_hour_wait": 36.7,
    "worst_hour": 17,
    "worst_hour_wait": 36.7
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Expedition Everest - Legend of the Forbidden Mountain",
+   "land_name": "Asia",
+   "avg_wait": 26.7,
+   "max_wait": 55,
+   "obs": 12,
+   "best_hour": null,
+   "best_hour_wait": null,
+   "worst_hour": null,
+   "worst_hour_wait": null
   },
   {
    "park_name": "Hollywood Studios",
@@ -907,6 +952,18 @@
    "worst_hour_wait": 20.0
   },
   {
+   "park_name": "EPCOT",
+   "ride_name": "Turtle Talk With Crush",
+   "land_name": "World Nature",
+   "avg_wait": 15.0,
+   "max_wait": 15,
+   "obs": 14,
+   "best_hour": 17,
+   "best_hour_wait": 15.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 15.0
+  },
+  {
    "park_name": "Magic Kingdom",
    "ride_name": "The Hall of Presidents",
    "land_name": "Liberty Square",
@@ -920,11 +977,11 @@
   },
   {
    "park_name": "EPCOT",
-   "ride_name": "Turtle Talk With Crush",
-   "land_name": "World Nature",
-   "avg_wait": 15.0,
+   "ride_name": "Canada Far and Wide in Circle-Vision 360",
+   "land_name": "World Showcase",
+   "avg_wait": 14.1,
    "max_wait": 15,
-   "obs": 14,
+   "obs": 16,
    "best_hour": 17,
    "best_hour_wait": 15.0,
    "worst_hour": 17,
@@ -941,18 +998,6 @@
    "best_hour_wait": 21.7,
    "worst_hour": 17,
    "worst_hour_wait": 21.7
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Canada Far and Wide in Circle-Vision 360",
-   "land_name": "World Showcase",
-   "avg_wait": 14.1,
-   "max_wait": 15,
-   "obs": 16,
-   "best_hour": 17,
-   "best_hour_wait": 15.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 15.0
   },
   {
    "park_name": "Magic Kingdom",
@@ -991,6 +1036,18 @@
    "worst_hour_wait": 21.7
   },
   {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Zootopia: Better Zoogether!",
+   "land_name": "Discovery Island",
+   "avg_wait": 12.5,
+   "max_wait": 20,
+   "obs": 14,
+   "best_hour": 17,
+   "best_hour_wait": 10.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 10.0
+  },
+  {
    "park_name": "Magic Kingdom",
    "ride_name": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party",
    "land_name": "Other",
@@ -1001,18 +1058,6 @@
    "best_hour_wait": null,
    "worst_hour": null,
    "worst_hour_wait": null
-  },
-  {
-   "park_name": "Animal Kingdom",
-   "ride_name": "Zootopia: Better Zoogether!",
-   "land_name": "Discovery Island",
-   "avg_wait": 12.3,
-   "max_wait": 20,
-   "obs": 13,
-   "best_hour": 17,
-   "best_hour_wait": 10.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 10.0
   },
   {
    "park_name": "Magic Kingdom",
@@ -1100,18 +1145,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "The Magic Carpets of Aladdin",
-   "land_name": "Adventureland",
-   "avg_wait": 9.7,
-   "max_wait": 25,
-   "obs": 17,
-   "best_hour": 17,
-   "best_hour_wait": 10.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 10.0
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Mad Tea Party",
    "land_name": "Fantasyland",
    "avg_wait": 9.7,
@@ -1123,16 +1156,16 @@
    "worst_hour_wait": 13.3
   },
   {
-   "park_name": "EPCOT",
-   "ride_name": "Journey Into Imagination With Figment",
-   "land_name": "World Celebration",
-   "avg_wait": 9.6,
-   "max_wait": 15,
-   "obs": 14,
+   "park_name": "Magic Kingdom",
+   "ride_name": "The Magic Carpets of Aladdin",
+   "land_name": "Adventureland",
+   "avg_wait": 9.7,
+   "max_wait": 25,
+   "obs": 17,
    "best_hour": 17,
-   "best_hour_wait": 11.7,
+   "best_hour_wait": 10.0,
    "worst_hour": 17,
-   "worst_hour_wait": 11.7
+   "worst_hour_wait": 10.0
   },
   {
    "park_name": "Magic Kingdom",
@@ -1148,15 +1181,15 @@
   },
   {
    "park_name": "EPCOT",
-   "ride_name": "The Seas with Nemo & Friends",
-   "land_name": "World Nature",
-   "avg_wait": 9.1,
-   "max_wait": 35,
-   "obs": 17,
+   "ride_name": "Journey Into Imagination With Figment",
+   "land_name": "World Celebration",
+   "avg_wait": 9.6,
+   "max_wait": 15,
+   "obs": 14,
    "best_hour": 17,
-   "best_hour_wait": 6.7,
+   "best_hour_wait": 11.7,
    "worst_hour": 17,
-   "worst_hour_wait": 6.7
+   "worst_hour_wait": 11.7
   },
   {
    "park_name": "EPCOT",
@@ -1169,6 +1202,18 @@
    "best_hour_wait": 15.0,
    "worst_hour": 17,
    "worst_hour_wait": 15.0
+  },
+  {
+   "park_name": "EPCOT",
+   "ride_name": "The Seas with Nemo & Friends",
+   "land_name": "World Nature",
+   "avg_wait": 9.1,
+   "max_wait": 35,
+   "obs": 17,
+   "best_hour": 17,
+   "best_hour_wait": 6.7,
+   "worst_hour": 17,
+   "worst_hour_wait": 6.7
   },
   {
    "park_name": "Magic Kingdom",
