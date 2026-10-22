@@ -1,10 +1,10 @@
 {
  "meta": {
-  "snapshots": 35,
+  "snapshots": 36,
   "attractions_seen": 111,
   "queued_attractions": 75,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-10-22T01:19:06",
+  "last_local": "2026-10-22T06:33:27",
   "days": 7
  },
  "latest": [],
@@ -844,18 +844,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Tiana's Bayou Adventure",
-   "land_name": "Frontierland",
-   "avg_wait": 22.6,
-   "max_wait": 50,
-   "obs": 23,
-   "best_hour": 20,
-   "best_hour_wait": 5.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 35.0
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
    "land_name": "Fantasyland",
    "avg_wait": 22.6,
@@ -865,6 +853,18 @@
    "best_hour_wait": 15.0,
    "worst_hour": 12,
    "worst_hour_wait": 20.0
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Tiana's Bayou Adventure",
+   "land_name": "Frontierland",
+   "avg_wait": 22.6,
+   "max_wait": 50,
+   "obs": 23,
+   "best_hour": 20,
+   "best_hour_wait": 5.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 35.0
   },
   {
    "park_name": "Magic Kingdom",
@@ -975,24 +975,24 @@
    "worst_hour_wait": 23.3
   },
   {
-   "park_name": "EPCOT",
-   "ride_name": "Turtle Talk With Crush",
-   "land_name": "World Nature",
-   "avg_wait": 15.0,
-   "max_wait": 15,
-   "obs": 20,
-   "best_hour": 12,
-   "best_hour_wait": 15.0,
-   "worst_hour": 12,
-   "worst_hour_wait": 15.0
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "The Hall of Presidents",
    "land_name": "Liberty Square",
    "avg_wait": 15.0,
    "max_wait": 15,
    "obs": 18,
+   "best_hour": 12,
+   "best_hour_wait": 15.0,
+   "worst_hour": 12,
+   "worst_hour_wait": 15.0
+  },
+  {
+   "park_name": "EPCOT",
+   "ride_name": "Turtle Talk With Crush",
+   "land_name": "World Nature",
+   "avg_wait": 15.0,
+   "max_wait": 15,
+   "obs": 20,
    "best_hour": 12,
    "best_hour_wait": 15.0,
    "worst_hour": 12,
@@ -1096,18 +1096,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Dumbo the Flying Elephant",
-   "land_name": "Fantasyland",
-   "avg_wait": 11.6,
-   "max_wait": 35,
-   "obs": 25,
-   "best_hour": 9,
-   "best_hour_wait": 5.0,
-   "worst_hour": 12,
-   "worst_hour_wait": 21.7
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Mickey's PhilharMagic",
    "land_name": "Fantasyland",
    "avg_wait": 11.6,
@@ -1117,6 +1105,18 @@
    "best_hour_wait": 11.7,
    "worst_hour": 17,
    "worst_hour_wait": 12.5
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Dumbo the Flying Elephant",
+   "land_name": "Fantasyland",
+   "avg_wait": 11.6,
+   "max_wait": 35,
+   "obs": 25,
+   "best_hour": 9,
+   "best_hour_wait": 5.0,
+   "worst_hour": 12,
+   "worst_hour_wait": 21.7
   },
   {
    "park_name": "Magic Kingdom",
