@@ -1,10 +1,10 @@
 {
  "meta": {
-  "snapshots": 60,
+  "snapshots": 61,
   "attractions_seen": 113,
   "queued_attractions": 75,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-10-26T01:12:37",
+  "last_local": "2026-10-26T07:28:54",
   "days": 11
  },
  "latest": [],
@@ -968,18 +968,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Tiana's Bayou Adventure",
-   "land_name": "Frontierland",
-   "avg_wait": 20.2,
-   "max_wait": 65,
-   "obs": 42,
-   "best_hour": 21,
-   "best_hour_wait": 6.0,
-   "worst_hour": 14,
-   "worst_hour_wait": 46.7
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Meet Ariel at Her Grotto",
    "land_name": "Fantasyland",
    "avg_wait": 20.2,
@@ -989,6 +977,18 @@
    "best_hour_wait": 16.3,
    "worst_hour": 17,
    "worst_hour_wait": 25.0
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Tiana's Bayou Adventure",
+   "land_name": "Frontierland",
+   "avg_wait": 20.2,
+   "max_wait": 65,
+   "obs": 42,
+   "best_hour": 21,
+   "best_hour_wait": 6.0,
+   "worst_hour": 14,
+   "worst_hour_wait": 46.7
   },
   {
    "park_name": "EPCOT",
@@ -1075,18 +1075,6 @@
    "worst_hour_wait": 15.0
   },
   {
-   "park_name": "EPCOT",
-   "ride_name": "Canada Far and Wide in Circle-Vision 360",
-   "land_name": "World Showcase",
-   "avg_wait": 14.2,
-   "max_wait": 15,
-   "obs": 37,
-   "best_hour": 9,
-   "best_hour_wait": 5.0,
-   "worst_hour": 12,
-   "worst_hour_wait": 15.0
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Pirates of the Caribbean",
    "land_name": "Adventureland",
@@ -1097,6 +1085,18 @@
    "best_hour_wait": 3.3,
    "worst_hour": 12,
    "worst_hour_wait": 25.8
+  },
+  {
+   "park_name": "EPCOT",
+   "ride_name": "Canada Far and Wide in Circle-Vision 360",
+   "land_name": "World Showcase",
+   "avg_wait": 14.2,
+   "max_wait": 15,
+   "obs": 37,
+   "best_hour": 9,
+   "best_hour_wait": 5.0,
+   "worst_hour": 12,
+   "worst_hour_wait": 15.0
   },
   {
    "park_name": "EPCOT",
@@ -1232,18 +1232,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Monsters, Inc. Laugh Floor",
-   "land_name": "Tomorrowland",
-   "avg_wait": 10.2,
-   "max_wait": 15,
-   "obs": 32,
-   "best_hour": 9,
-   "best_hour_wait": 3.3,
-   "worst_hour": 17,
-   "worst_hour_wait": 12.0
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Dumbo the Flying Elephant",
    "land_name": "Fantasyland",
    "avg_wait": 10.2,
@@ -1253,6 +1241,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 17,
    "worst_hour_wait": 24.0
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Monsters, Inc. Laugh Floor",
+   "land_name": "Tomorrowland",
+   "avg_wait": 10.2,
+   "max_wait": 15,
+   "obs": 32,
+   "best_hour": 9,
+   "best_hour_wait": 3.3,
+   "worst_hour": 17,
+   "worst_hour_wait": 12.0
   },
   {
    "park_name": "Magic Kingdom",
