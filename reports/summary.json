@@ -1,172 +1,14 @@
 {
  "meta": {
-  "snapshots": 78,
+  "snapshots": 79,
   "attractions_seen": 113,
   "queued_attractions": 75,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-10-29T22:52:33",
-  "days": 14
+  "last_local": "2026-10-30T05:52:35",
+  "days": 15
  },
- "latest": [
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Meet Jack Skellington and Sally at Mickey's Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "wait_time": 80
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "TRON Lightcycle / Run",
-   "land_name": "Tomorrowland",
-   "wait_time": 35
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "wait_time": 35
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Seven Dwarfs Mine Train",
-   "land_name": "Fantasyland",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Peter Pan's Flight",
-   "land_name": "Fantasyland",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Meet Festive Disney Pals at Mickey\u2019s Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Haunted Mansion",
-   "land_name": "Liberty Square",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "land_name": "Tomorrowland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Big Thunder Mountain Railroad",
-   "land_name": "Frontierland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Under the Sea - Journey of The Little Mermaid",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Barnstormer",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Many Adventures of Winnie the Pooh",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Swiss Family Treehouse",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Prince Charming Regal Carrousel",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tiana's Bayou Adventure",
-   "land_name": "Frontierland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Mad Tea Party",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Astro Orbiter",
-   "land_name": "Tomorrowland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Dumbo the Flying Elephant",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Space Mountain",
-   "land_name": "Tomorrowland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Speedway",
-   "land_name": "Tomorrowland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Transit Authority PeopleMover",
-   "land_name": "Tomorrowland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "\"it's a small world\"",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Magic Carpets of Aladdin",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Pirates of the Caribbean",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Jungle Cruise",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  }
- ],
- "park_now": [
-  {
-   "park_name": "Magic Kingdom",
-   "avg_wait": 12.8,
-   "max_wait": 80,
-   "open_queued": 25
-  }
- ],
+ "latest": [],
+ "park_now": [],
  "by_hour": [
   {
    "park_name": "Animal Kingdom",
@@ -1000,18 +842,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
-   "land_name": "Fantasyland",
-   "avg_wait": 24.6,
-   "max_wait": 55,
-   "obs": 39,
-   "best_hour": 9,
-   "best_hour_wait": 13.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 37.5
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Jungle Cruise",
    "land_name": "Adventureland",
    "avg_wait": 24.6,
@@ -1021,6 +851,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 12,
    "worst_hour_wait": 39.2
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
+   "land_name": "Fantasyland",
+   "avg_wait": 24.6,
+   "max_wait": 55,
+   "obs": 39,
+   "best_hour": 9,
+   "best_hour_wait": 13.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 37.5
   },
   {
    "park_name": "Animal Kingdom",
@@ -1288,18 +1130,6 @@
   },
   {
    "park_name": "EPCOT",
-   "ride_name": "Spaceship Earth",
-   "land_name": "World Celebration",
-   "avg_wait": 12.0,
-   "max_wait": 30,
-   "obs": 49,
-   "best_hour": 9,
-   "best_hour_wait": 5.0,
-   "worst_hour": 12,
-   "worst_hour_wait": 18.3
-  },
-  {
-   "park_name": "EPCOT",
    "ride_name": "Living with the Land",
    "land_name": "World Nature",
    "avg_wait": 12.0,
@@ -1309,6 +1139,18 @@
    "best_hour_wait": 3.8,
    "worst_hour": 12,
    "worst_hour_wait": 19.2
+  },
+  {
+   "park_name": "EPCOT",
+   "ride_name": "Spaceship Earth",
+   "land_name": "World Celebration",
+   "avg_wait": 12.0,
+   "max_wait": 30,
+   "obs": 49,
+   "best_hour": 9,
+   "best_hour_wait": 5.0,
+   "worst_hour": 12,
+   "worst_hour_wait": 18.3
   },
   {
    "park_name": "Magic Kingdom",
@@ -1348,18 +1190,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Speedway",
-   "land_name": "Tomorrowland",
-   "avg_wait": 10.1,
-   "max_wait": 30,
-   "obs": 59,
-   "best_hour": 21,
-   "best_hour_wait": 6.7,
-   "worst_hour": 12,
-   "worst_hour_wait": 14.2
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Monsters, Inc. Laugh Floor",
    "land_name": "Tomorrowland",
    "avg_wait": 10.1,
@@ -1372,15 +1202,15 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Walt Disney's Enchanted Tiki Room",
-   "land_name": "Adventureland",
-   "avg_wait": 10.0,
-   "max_wait": 10,
-   "obs": 45,
-   "best_hour": 9,
-   "best_hour_wait": 10.0,
-   "worst_hour": 9,
-   "worst_hour_wait": 10.0
+   "ride_name": "Tomorrowland Speedway",
+   "land_name": "Tomorrowland",
+   "avg_wait": 10.1,
+   "max_wait": 30,
+   "obs": 59,
+   "best_hour": 21,
+   "best_hour_wait": 6.7,
+   "worst_hour": 12,
+   "worst_hour_wait": 14.2
   },
   {
    "park_name": "Magic Kingdom",
@@ -1393,6 +1223,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 17,
    "worst_hour_wait": 17.5
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Walt Disney's Enchanted Tiki Room",
+   "land_name": "Adventureland",
+   "avg_wait": 10.0,
+   "max_wait": 10,
+   "obs": 45,
+   "best_hour": 9,
+   "best_hour_wait": 10.0,
+   "worst_hour": 9,
+   "worst_hour_wait": 10.0
   },
   {
    "park_name": "Magic Kingdom",
@@ -1419,18 +1261,6 @@
    "worst_hour_wait": 15.0
   },
   {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Vacation Fun - An Original Animated Short with Mickey & Minnie",
-   "land_name": "Echo Lake",
-   "avg_wait": 9.5,
-   "max_wait": 10,
-   "obs": 42,
-   "best_hour": 9,
-   "best_hour_wait": 8.0,
-   "worst_hour": 14,
-   "worst_hour_wait": 10.0
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Dumbo the Flying Elephant",
    "land_name": "Fantasyland",
@@ -1441,6 +1271,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 17,
    "worst_hour_wait": 24.2
+  },
+  {
+   "park_name": "Hollywood Studios",
+   "ride_name": "Vacation Fun - An Original Animated Short with Mickey & Minnie",
+   "land_name": "Echo Lake",
+   "avg_wait": 9.5,
+   "max_wait": 10,
+   "obs": 42,
+   "best_hour": 9,
+   "best_hour_wait": 8.0,
+   "worst_hour": 14,
+   "worst_hour_wait": 10.0
   },
   {
    "park_name": "Animal Kingdom",
