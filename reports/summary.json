@@ -1,310 +1,14 @@
 {
  "meta": {
-  "snapshots": 87,
+  "snapshots": 88,
   "attractions_seen": 113,
   "queued_attractions": 77,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-10-31T20:23:31",
-  "days": 16
+  "last_local": "2026-11-01T01:44:38",
+  "days": 17
  },
- "latest": [
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Test Track",
-   "land_name": "World Discovery",
-   "wait_time": 90
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Guardians of the Galaxy: Cosmic Rewind",
-   "land_name": "World Discovery",
-   "wait_time": 75
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Meet Jack Skellington and Sally at Mickey's Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "wait_time": 45
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
-   "land_name": "Sunset Boulevard",
-   "wait_time": 40
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Remy's Ratatouille Adventure",
-   "land_name": "World Showcase",
-   "wait_time": 40
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "The Twilight Zone\u2122 Tower of Terror",
-   "land_name": "Sunset Boulevard",
-   "wait_time": 35
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Star Wars: Rise of the Resistance",
-   "land_name": "Star Wars: Galaxy's Edge",
-   "wait_time": 35
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Slinky Dog Dash",
-   "land_name": "Toy Story Land",
-   "wait_time": 30
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Toy Story Mania!",
-   "land_name": "Pixar Plaza",
-   "wait_time": 30
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Seven Dwarfs Mine Train",
-   "land_name": "Fantasyland",
-   "wait_time": 25
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Mickey & Minnie's Runaway Railway",
-   "land_name": "Hollywood Boulevard",
-   "wait_time": 25
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "TRON Lightcycle / Run",
-   "land_name": "Tomorrowland",
-   "wait_time": 25
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Meet Beloved Disney Pals at Mickey & Friends",
-   "land_name": "World Celebration",
-   "wait_time": 25
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Haunted Mansion",
-   "land_name": "Liberty Square",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Space Mountain",
-   "land_name": "Tomorrowland",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Meet Festive Disney Pals at Mickey\u2019s Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Peter Pan's Flight",
-   "land_name": "Fantasyland",
-   "wait_time": 15
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Canada Far and Wide in Circle-Vision 360",
-   "land_name": "World Showcase",
-   "wait_time": 15
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Turtle Talk With Crush",
-   "land_name": "World Nature",
-   "wait_time": 15
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Soarin' Across America",
-   "land_name": "World Nature",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "land_name": "Tomorrowland",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Millennium Falcon: Smugglers Run",
-   "land_name": "Star Wars: Galaxy's Edge",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Speedway",
-   "land_name": "Tomorrowland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Mad Tea Party",
-   "land_name": "Fantasyland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Mission: SPACE",
-   "land_name": "World Discovery",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Meet Mickey Mouse and Minnie Mouse at Mickey's Not-So-Scary Halloween Party",
-   "land_name": "Other",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Prince Charming Regal Carrousel",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Journey Into Imagination With Figment",
-   "land_name": "World Celebration",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Many Adventures of Winnie the Pooh",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Swiss Family Treehouse",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Living with the Land",
-   "land_name": "World Nature",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Transit Authority PeopleMover",
-   "land_name": "Tomorrowland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "The Seas with Nemo & Friends",
-   "land_name": "World Nature",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tiana's Bayou Adventure",
-   "land_name": "Frontierland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Gran Fiesta Tour Starring The Three Caballeros",
-   "land_name": "World Showcase",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Dumbo the Flying Elephant",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Star Tours \u2013 The Adventures Continue",
-   "land_name": "Echo Lake",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Big Thunder Mountain Railroad",
-   "land_name": "Frontierland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Under the Sea - Journey of The Little Mermaid",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Barnstormer",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Magic Carpets of Aladdin",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Pirates of the Caribbean",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Alien Swirling Saucers",
-   "land_name": "Toy Story Land",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Jungle Cruise",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Astro Orbiter",
-   "land_name": "Tomorrowland",
-   "wait_time": 0
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "\"it's a small world\"",
-   "land_name": "Fantasyland",
-   "wait_time": 0
-  }
- ],
- "park_now": [
-  {
-   "park_name": "EPCOT",
-   "avg_wait": 25.4,
-   "max_wait": 90,
-   "open_queued": 12
-  },
-  {
-   "park_name": "Hollywood Studios",
-   "avg_wait": 23.9,
-   "max_wait": 40,
-   "open_queued": 9
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "avg_wait": 11.0,
-   "max_wait": 45,
-   "open_queued": 25
-  }
- ],
+ "latest": [],
+ "park_now": [],
  "by_hour": [
   {
    "park_name": "Animal Kingdom",
@@ -1041,18 +745,6 @@
    "worst_hour_wait": 45.7
   },
   {
-   "park_name": "Animal Kingdom",
-   "ride_name": "Meet Favorite Disney Pals at Adventurers Outpost",
-   "land_name": "Discovery Island",
-   "avg_wait": 27.6,
-   "max_wait": 65,
-   "obs": 42,
-   "best_hour": 9,
-   "best_hour_wait": 20.0,
-   "worst_hour": 17,
-   "worst_hour_wait": 40.6
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Meet Dashing Disney Pals as Circus Stars at Pete's Silly Sideshow",
    "land_name": "Fantasyland",
@@ -1063,6 +755,18 @@
    "best_hour_wait": 21.0,
    "worst_hour": 17,
    "worst_hour_wait": 42.0
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Meet Favorite Disney Pals at Adventurers Outpost",
+   "land_name": "Discovery Island",
+   "avg_wait": 27.6,
+   "max_wait": 65,
+   "obs": 42,
+   "best_hour": 9,
+   "best_hour_wait": 20.0,
+   "worst_hour": 17,
+   "worst_hour_wait": 40.6
   },
   {
    "park_name": "Hollywood Studios",
@@ -1161,18 +865,6 @@
    "worst_hour_wait": 39.0
   },
   {
-   "park_name": "Animal Kingdom",
-   "ride_name": "Bluey's Wild World at Conservation Station",
-   "land_name": "Conservation Station",
-   "avg_wait": 23.2,
-   "max_wait": 45,
-   "obs": 19,
-   "best_hour": 16,
-   "best_hour_wait": 21.7,
-   "worst_hour": 14,
-   "worst_hour_wait": 31.3
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Haunted Mansion",
    "land_name": "Liberty Square",
@@ -1183,6 +875,18 @@
    "best_hour_wait": 10.8,
    "worst_hour": 17,
    "worst_hour_wait": 33.1
+  },
+  {
+   "park_name": "Animal Kingdom",
+   "ride_name": "Bluey's Wild World at Conservation Station",
+   "land_name": "Conservation Station",
+   "avg_wait": 23.2,
+   "max_wait": 45,
+   "obs": 19,
+   "best_hour": 16,
+   "best_hour_wait": 21.7,
+   "worst_hour": 14,
+   "worst_hour_wait": 31.3
   },
   {
    "park_name": "Magic Kingdom",
@@ -1294,18 +998,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Walt Disney World Railroad - Main Street, U.S.A.",
-   "land_name": "Main Street, U.S.A.",
-   "avg_wait": 17.5,
-   "max_wait": 20,
-   "obs": 4,
-   "best_hour": null,
-   "best_hour_wait": null,
-   "worst_hour": null,
-   "worst_hour_wait": null
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Walt Disney World Railroad - Fantasyland",
    "land_name": "Fantasyland",
    "avg_wait": 17.5,
@@ -1318,15 +1010,15 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Enchanted Tales with Belle",
-   "land_name": "Fantasyland",
-   "avg_wait": 16.9,
-   "max_wait": 35,
-   "obs": 34,
-   "best_hour": 14,
-   "best_hour_wait": 12.5,
-   "worst_hour": 17,
-   "worst_hour_wait": 22.5
+   "ride_name": "Walt Disney World Railroad - Main Street, U.S.A.",
+   "land_name": "Main Street, U.S.A.",
+   "avg_wait": 17.5,
+   "max_wait": 20,
+   "obs": 4,
+   "best_hour": null,
+   "best_hour_wait": null,
+   "worst_hour": null,
+   "worst_hour_wait": null
   },
   {
    "park_name": "EPCOT",
@@ -1339,6 +1031,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 19,
    "worst_hour_wait": 26.0
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Enchanted Tales with Belle",
+   "land_name": "Fantasyland",
+   "avg_wait": 16.9,
+   "max_wait": 35,
+   "obs": 34,
+   "best_hour": 14,
+   "best_hour_wait": 12.5,
+   "worst_hour": 17,
+   "worst_hour_wait": 22.5
   },
   {
    "park_name": "Magic Kingdom",
@@ -1497,18 +1201,6 @@
    "worst_hour_wait": 15.0
   },
   {
-   "park_name": "Hollywood Studios",
-   "ride_name": "Meet Edna Mode at the Edna Mode Experience",
-   "land_name": "Pixar Plaza",
-   "avg_wait": 10.2,
-   "max_wait": 15,
-   "obs": 31,
-   "best_hour": 13,
-   "best_hour_wait": 5.0,
-   "worst_hour": 14,
-   "worst_hour_wait": 15.0
-  },
-  {
    "park_name": "Magic Kingdom",
    "ride_name": "Under the Sea - Journey of The Little Mermaid",
    "land_name": "Fantasyland",
@@ -1519,6 +1211,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 16,
    "worst_hour_wait": 20.0
+  },
+  {
+   "park_name": "Hollywood Studios",
+   "ride_name": "Meet Edna Mode at the Edna Mode Experience",
+   "land_name": "Pixar Plaza",
+   "avg_wait": 10.2,
+   "max_wait": 15,
+   "obs": 31,
+   "best_hour": 13,
+   "best_hour_wait": 5.0,
+   "worst_hour": 14,
+   "worst_hour_wait": 15.0
   },
   {
    "park_name": "Magic Kingdom",
@@ -1677,18 +1381,6 @@
    "worst_hour_wait": 15.0
   },
   {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Magic Carpets of Aladdin",
-   "land_name": "Adventureland",
-   "avg_wait": 7.7,
-   "max_wait": 25,
-   "obs": 65,
-   "best_hour": 9,
-   "best_hour_wait": 5.0,
-   "worst_hour": 12,
-   "worst_hour_wait": 12.1
-  },
-  {
    "park_name": "Hollywood Studios",
    "ride_name": "Star Tours \u2013 The Adventures Continue",
    "land_name": "Echo Lake",
@@ -1699,6 +1391,18 @@
    "best_hour_wait": 5.0,
    "worst_hour": 14,
    "worst_hour_wait": 11.3
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "The Magic Carpets of Aladdin",
+   "land_name": "Adventureland",
+   "avg_wait": 7.7,
+   "max_wait": 25,
+   "obs": 65,
+   "best_hour": 9,
+   "best_hour_wait": 5.0,
+   "worst_hour": 12,
+   "worst_hour_wait": 12.1
   },
   {
    "park_name": "EPCOT",
