@@ -1,226 +1,14 @@
 {
  "meta": {
-  "snapshots": 95,
-  "attractions_seen": 115,
+  "snapshots": 96,
+  "attractions_seen": 116,
   "queued_attractions": 77,
   "first_local": "2026-10-16T10:24:19",
-  "last_local": "2026-11-02T21:35:57",
-  "days": 18
+  "last_local": "2026-11-03T05:00:10",
+  "days": 19
  },
- "latest": [
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Guardians of the Galaxy: Cosmic Rewind",
-   "land_name": "World Discovery",
-   "wait_time": 50
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Test Track",
-   "land_name": "World Discovery",
-   "wait_time": 45
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "TRON Lightcycle / Run",
-   "land_name": "Tomorrowland",
-   "wait_time": 35
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Remy's Ratatouille Adventure",
-   "land_name": "World Showcase",
-   "wait_time": 35
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Frozen Ever After",
-   "land_name": "World Showcase",
-   "wait_time": 30
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Soarin' Across America",
-   "land_name": "World Nature",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Seven Dwarfs Mine Train",
-   "land_name": "Fantasyland",
-   "wait_time": 20
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Big Thunder Mountain Railroad",
-   "land_name": "Frontierland",
-   "wait_time": 15
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Mission: SPACE",
-   "land_name": "World Discovery",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Space Mountain",
-   "land_name": "Tomorrowland",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Mickey's PhilharMagic",
-   "land_name": "Fantasyland",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Peter Pan's Flight",
-   "land_name": "Fantasyland",
-   "wait_time": 15
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Haunted Mansion",
-   "land_name": "Liberty Square",
-   "wait_time": 13
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Country Bear Musical Jamboree",
-   "land_name": "Frontierland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Many Adventures of Winnie the Pooh",
-   "land_name": "Fantasyland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Astro Orbiter",
-   "land_name": "Tomorrowland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Buzz Lightyear\u2019s Space Ranger Spin",
-   "land_name": "Tomorrowland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Speedway",
-   "land_name": "Tomorrowland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Spaceship Earth",
-   "land_name": "World Celebration",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Walt Disney's Enchanted Tiki Room",
-   "land_name": "Adventureland",
-   "wait_time": 10
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Under the Sea - Journey of The Little Mermaid",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Swiss Family Treehouse",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Barnstormer",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Prince Charming Regal Carrousel",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Transit Authority PeopleMover",
-   "land_name": "Tomorrowland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Mad Tea Party",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Dumbo the Flying Elephant",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "\"it's a small world\"",
-   "land_name": "Fantasyland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "The Magic Carpets of Aladdin",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "The Seas with Nemo & Friends",
-   "land_name": "World Nature",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Pirates of the Caribbean",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "ride_name": "Jungle Cruise",
-   "land_name": "Adventureland",
-   "wait_time": 5
-  },
-  {
-   "park_name": "EPCOT",
-   "ride_name": "Gran Fiesta Tour Starring The Three Caballeros",
-   "land_name": "World Showcase",
-   "wait_time": 0
-  }
- ],
- "park_now": [
-  {
-   "park_name": "EPCOT",
-   "avg_wait": 23.3,
-   "max_wait": 50,
-   "open_queued": 9
-  },
-  {
-   "park_name": "Magic Kingdom",
-   "avg_wait": 10.1,
-   "max_wait": 35,
-   "open_queued": 24
-  }
- ],
+ "latest": [],
+ "park_now": [],
  "by_hour": [
   {
    "park_name": "Animal Kingdom",
@@ -1462,18 +1250,6 @@
   },
   {
    "park_name": "Magic Kingdom",
-   "ride_name": "Tomorrowland Speedway",
-   "land_name": "Tomorrowland",
-   "avg_wait": 9.9,
-   "max_wait": 30,
-   "obs": 72,
-   "best_hour": 21,
-   "best_hour_wait": 6.9,
-   "worst_hour": 12,
-   "worst_hour_wait": 12.9
-  },
-  {
-   "park_name": "Magic Kingdom",
    "ride_name": "Monsters, Inc. Laugh Floor",
    "land_name": "Tomorrowland",
    "avg_wait": 9.9,
@@ -1483,6 +1259,18 @@
    "best_hour_wait": 5.7,
    "worst_hour": 19,
    "worst_hour_wait": 11.7
+  },
+  {
+   "park_name": "Magic Kingdom",
+   "ride_name": "Tomorrowland Speedway",
+   "land_name": "Tomorrowland",
+   "avg_wait": 9.9,
+   "max_wait": 30,
+   "obs": 72,
+   "best_hour": 21,
+   "best_hour_wait": 6.9,
+   "worst_hour": 12,
+   "worst_hour_wait": 12.9
   },
   {
    "park_name": "Hollywood Studios",
